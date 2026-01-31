@@ -449,6 +449,22 @@ h1, h2, h3 {
     line-height: 1.5;
 }
 
+.card-hint {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: var(--secondary-color);
+    margin: 12px 0 0 0;
+    line-height: 1.4;
+}
+
+.card-hint code {
+    background-color: var(--hover-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+}
+
 /* Widgets Card */
 .widgets-card {
     padding: 0;
@@ -553,8 +569,8 @@ h1, h2, h3 {
     margin: 0 0 10px 0;
 }
 
-.action-button-text .card-title {
-    margin: 0 0 0 -6px;
+.action-button-card h3.card-title {
+    margin: 0;
     text-align: left;
 }
 
