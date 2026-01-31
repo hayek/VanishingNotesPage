@@ -634,8 +634,9 @@ h1, h2, h3 {
     padding: 25px 30px;
 }
 
-.ecosystem-image-text .card-title {
-    text-align: left;
+.ecosystem-image-text .card-title,
+.ecosystem-image-text .card-subtitle {
+    text-align: center;
 }
 
 /* Ecosystem Card */
