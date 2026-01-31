@@ -66,16 +66,8 @@
                     </a>
                 </div>
                 <div class="hero-visual">
-                    <div class="rotating-phrases">
-                        <span class="phrase active">That delivery driver's number</span>
-                        <span class="phrase">The hotel WiFi password</span>
-                        <span class="phrase">Groceries you'll buy half of</span>
-                        <span class="phrase">That Zoom link</span>
-                        <span class="phrase">Their name (you already forgot)</span>
-                        <span class="phrase">The couch dimensions</span>
-                        <span class="phrase">Tomorrow's problem</span>
-                        <span class="phrase">Where you parked. Again.</span>
-                    </div>
+                    <img src="Assets/Hero.png" alt="Vanishing Notes App Screenshot" class="hero-image hero-image-light">
+                    <img src="Assets/Hero-dark.png" alt="Vanishing Notes App Screenshot" class="hero-image hero-image-dark">
                 </div>
                 <a href="#download" class="app-store-button app-store-mobile">
                     <svg viewBox="0 0 355 60" xmlns="http://www.w3.org/2000/svg">
@@ -91,123 +83,119 @@
     <section id="features" class="section">
         <div class="container">
 
-            <!-- Auto-Expiring Notes -->
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-text">
-                        <h3>Choose When They Vanish</h3>
-                        <p><strong>24 hours</strong> for quick thoughts. <strong>7 days</strong> for weekly notes. <strong>30 days</strong> for monthly reference. When time's up, they disappear—automatically and permanently.</p>
-                        <div class="date-divider">
-                            <div class="dashed-line"></div>
-                            <span class="current-date">29 Jan</span>
+            <!-- Perfect For -->
+            <div class="card perfect-for-card">
+                <h3 class="perfect-for-title">Perfect for</h3>
+                <div class="marquee-wrapper">
+                    <div class="marquee">
+                        <div class="marquee-content">
+                            <span class="marquee-item">That delivery driver's number</span>
+                            <span class="marquee-item">The hotel WiFi password</span>
+                            <span class="marquee-item">Groceries you'll buy half of</span>
+                            <span class="marquee-item">That Zoom link</span>
+                            <span class="marquee-item">Their name (you already forgot)</span>
+                            <span class="marquee-item">The couch dimensions</span>
+                        </div>
+                        <div class="marquee-content" aria-hidden="true">
+                            <span class="marquee-item">That delivery driver's number</span>
+                            <span class="marquee-item">The hotel WiFi password</span>
+                            <span class="marquee-item">Groceries you'll buy half of</span>
+                            <span class="marquee-item">That Zoom link</span>
+                            <span class="marquee-item">Their name (you already forgot)</span>
+                            <span class="marquee-item">The couch dimensions</span>
                         </div>
                     </div>
-                    <div>
-                        <div class="phone-mockup">
-                            <img src="/Volumes/Beta/Users/ahayek/Desktop/Simulator Screenshot - iPhone 17 - 2026-01-29 at 09.45.57.png" alt="Vanishing Notes List" class="card-image">
+                    <div class="marquee marquee-reverse">
+                        <div class="marquee-content">
+                            <span class="marquee-item">Tomorrow's problem</span>
+                            <span class="marquee-item">Where you parked. Again.</span>
+                            <span class="marquee-item">The gate code</span>
+                            <span class="marquee-item">Flight confirmation</span>
+                            <span class="marquee-item">That recipe you'll never make</span>
+                            <span class="marquee-item">Meeting room number</span>
+                        </div>
+                        <div class="marquee-content" aria-hidden="true">
+                            <span class="marquee-item">Tomorrow's problem</span>
+                            <span class="marquee-item">Where you parked. Again.</span>
+                            <span class="marquee-item">The gate code</span>
+                            <span class="marquee-item">Flight confirmation</span>
+                            <span class="marquee-item">That recipe you'll never make</span>
+                            <span class="marquee-item">Meeting room number</span>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- In-Place Editing -->
-            <div class="card">
-                <div class="card-content reverse">
-                    <div class="card-text">
-                        <h3>Edit in Place</h3>
-                        <p><strong>No extra screens. No navigation.</strong> Tap a note and start typing. Edit directly in the list view. When you update a note, its timer resets—keeping active notes around as long as you need them.</p>
-                    </div>
-                    <div>
-                        <div class="phone-mockup">
-                            <img src="/Volumes/Beta/Users/ahayek/Desktop/Simulator Screenshot - iPhone 17 - 2026-01-29 at 09.45.59.png" alt="Settings" class="card-image">
+                    <div class="marquee">
+                        <div class="marquee-content">
+                            <span class="marquee-item">The lockbox code</span>
+                            <span class="marquee-item">Your table number</span>
+                            <span class="marquee-item">That book recommendation</span>
+                            <span class="marquee-item">The confirmation code</span>
+                            <span class="marquee-item">The Airbnb instructions</span>
+                            <span class="marquee-item">That referral code</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Smart Detection -->
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-text">
-                        <h3>Smart Detection</h3>
-                        <p><strong>Phone numbers, emails, and links are automatically detected.</strong> Tap to call, email, or browse—no copy-paste needed. Perfect for temporary contact info and quick references.</p>
-                    </div>
-                    <div>
-                        <div class="phone-mockup">
-                            <img src="/Volumes/Beta/Users/ahayek/Desktop/Simulator Screenshot - iPhone 17 - 2026-01-29 at 09.46.15.png" alt="Smart Detection" class="card-image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- iCloud Sync -->
-            <div class="card">
-                <div class="card-content reverse">
-                    <div class="card-text">
-                        <h3>Seamless iCloud Sync</h3>
-                        <p><strong>All your notes sync across your Apple devices.</strong> Start on iPhone, continue on Mac, finish on iPad. Changes appear instantly. Your data stays in your private iCloud—never on third-party servers.</p>
-                    </div>
-                    <div style="display: flex; align-items: center; justify-content: center;">
-                        <img src="/Volumes/Beta/Users/ahayek/Desktop/macscreenshotVN.png" alt="macOS App" class="card-image" style="max-width: 100%; height: auto; border-radius: 20px;">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Siri & Shortcuts -->
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-text">
-                        <h3>Siri & Shortcuts</h3>
-                        <p><strong>Create notes with your voice.</strong> "Hey Siri, create a note in Vanishing Notes" and dictate your content. Fully integrated with Apple Shortcuts for powerful automation workflows.</p>
-                    </div>
-                    <div>
-                        <div class="phone-mockup">
-                            <img src="/Volumes/Beta/Users/ahayek/Desktop/Simulator Screenshot - iPad mini (A17 Pro) - 2026-01-29 at 09.43.44.png" alt="iPad Interface" class="card-image">
+                        <div class="marquee-content" aria-hidden="true">
+                            <span class="marquee-item">The lockbox code</span>
+                            <span class="marquee-item">Your table number</span>
+                            <span class="marquee-item">That book recommendation</span>
+                            <span class="marquee-item">The confirmation code</span>
+                            <span class="marquee-item">The Airbnb instructions</span>
+                            <span class="marquee-item">That referral code</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Safety Net -->
-            <div class="card">
-                <div class="card-content reverse">
-                    <div class="card-text">
-                        <h3>Safety Net</h3>
-                        <p><strong>Deleted notes stay in trash for 30 days.</strong> Changed your mind? Restore them before they're gone forever. A safety net for those moments when you delete too quickly.</p>
-                    </div>
-                    <div>
-                        <div class="phone-mockup">
-                            <img src="/Volumes/Beta/Users/ahayek/Desktop/Simulator Screenshot - iPad mini (A17 Pro) - 2026-01-29 at 09.43.49.png" alt="Trash Feature" class="card-image">
+            <!-- Widgets & Action Button -->
+            <div class="card-row-50">
+                <div class="card widgets-card">
+                    <div class="widgets-showcase">
+                        <img src="Assets/widget-big-dark.png" alt="Large Widget Dark" class="widget-img widget-big widget-top-left">
+                        <img src="Assets/widget-small-dark.png" alt="Small Widget Dark" class="widget-img widget-small widget-top-right">
+                        <img src="Assets/widget-small.png" alt="Small Widget" class="widget-img widget-small widget-bottom-left">
+                        <img src="Assets/widget-big.png" alt="Large Widget" class="widget-img widget-big widget-bottom-right">
+                        <div class="widgets-text">
+                            <h3>Widgets</h3>
+                            <p>Quick glance at your notes right from your Home Screen</p>
                         </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Design Philosophy -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Paper & Ink</h2>
-            <div class="card philosophy-card">
-                <p style="font-size: 18px; opacity: 0.9; text-align: center; max-width: 700px; margin: 0 auto;"><strong>A minimal, typography-focused design.</strong> No buttons with backgrounds, no glass effects. Just text as the interface—inspired by the timeless simplicity of ink on paper.</p>
-
-                <div class="philosophy-grid">
-                    <div class="philosophy-item">
-                        <h4>Typography as UI</h4>
-                        <p>Text itself is the interface</p>
-                    </div>
-                    <div class="philosophy-item">
-                        <h4>Minimal Chrome</h4>
-                        <p>Clean and distraction-free</p>
-                    </div>
-                    <div class="philosophy-item">
-                        <h4>Dark Mode First</h4>
-                        <p>White ink on black paper</p>
+                <div class="card action-button-card">
+                    <div class="action-button-content">
+                        <div class="action-button-text">
+                            <p class="action-button-subtitle">No need to open the App</p>
+                            <h3>One Tap to New</h3>
+                        </div>
+                        <img src="Assets/actionButton.png" alt="iPhone Action Button" class="action-button-image">
                     </div>
                 </div>
             </div>
+
+            <!-- Ecosystem & iCloud -->
+            <div class="card-row-70-30">
+                <div class="card ecosystem-image-card">
+                    <img src="Assets/ecosystem.png" alt="Vanishing Notes on Mac, iPad and iPhone" class="ecosystem-image ecosystem-image-light">
+                    <img src="Assets/ecosystem-dark.png" alt="Vanishing Notes on Mac, iPad and iPhone" class="ecosystem-image ecosystem-image-dark">
+                    <div class="ecosystem-image-text">
+                        <h3>Available everywhere</h3>
+                        <p>iPhone, iPad, and Mac. Your notes sync instantly across all your Apple devices.</p>
+                    </div>
+                </div>
+                <div class="card ecosystem-card">
+                    <div class="ecosystem-icons">
+                        <div class="ecosystem-icon-wrapper">
+                            <img src="Assets/shortcuts-icon.png" alt="Shortcuts" class="ecosystem-icon">
+                        </div>
+                        <div class="ecosystem-icon-wrapper ecosystem-icon-main">
+                            <img src="Assets/icloud-icon.png" alt="iCloud" class="ecosystem-icon">
+                        </div>
+                        <div class="ecosystem-icon-wrapper">
+                            <img src="Assets/siri-icon.png" alt="Siri" class="ecosystem-icon">
+                        </div>
+                    </div>
+                    <h3>Built for Apple ecosystem</h3>
+                    <p>Sync data to all your devices through iCloud, automate workflows using Shortcuts and use Siri to make actions with your voice</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
