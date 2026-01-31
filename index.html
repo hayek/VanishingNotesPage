@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanishing Notes - Notes That Disappear</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button class="theme-button" data-theme="light" title="Light mode">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+        </button>
+        <button class="theme-button active" data-theme="system" title="System preference">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+        </button>
+        <button class="theme-button" data-theme="dark" title="Dark mode">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="app-icon-wrapper">
+                        <img src="/Volumes/Beta/Users/ahayek/Desktop/iconVN.png" alt="Vanishing Notes App Icon" class="app-icon">
+                    </div>
+                    <h1>Vanishing Notes</h1>
+                    <p class="subtitle"><span style="font-weight: 600;">Notes that disappear. Automatically.</span> A minimal note-taking app for temporary thoughts. Write freely, then let go—no clutter, no guilt.</p>
+                    <div class="platform-badges">
+                        <span class="platform-badge">iOS</span>
+                        <span class="platform-badge">iPadOS</span>
+                        <span class="platform-badge">macOS</span>
+                    </div>
+                    <a href="#download" class="app-store-button app-store-desktop">
+                        <svg viewBox="0 0 355 60" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="355" height="60" rx="20" fill="var(--primary-color)"/>
+                            <text x="177.5" y="38" font-family="'Inter', sans-serif" font-size="18" font-weight="600" fill="var(--bg-color)" text-anchor="middle">Download for Free</text>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-visual">
+                    <div class="rotating-phrases">
+                        <span class="phrase active">That delivery driver's number</span>
+                        <span class="phrase">The hotel WiFi password</span>
+                        <span class="phrase">Groceries you'll buy half of</span>
+                        <span class="phrase">That Zoom link</span>
+                        <span class="phrase">Their name (you already forgot)</span>
+                        <span class="phrase">The couch dimensions</span>
+                        <span class="phrase">Tomorrow's problem</span>
+                        <span class="phrase">Where you parked. Again.</span>
+                    </div>
+                </div>
+                <a href="#download" class="app-store-button app-store-mobile">
+                    <svg viewBox="0 0 355 60" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="355" height="60" rx="20" fill="var(--primary-color)"/>
+                        <text x="177.5" y="38" font-family="'Inter', sans-serif" font-size="18" font-weight="600" fill="var(--bg-color)" text-anchor="middle">Download for Free</text>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <div class="container">
+
+            <!-- Auto-Expiring Notes -->
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-text">
+                        <h3>Choose When They Vanish</h3>
+                        <p><strong>24 hours</strong> for quick thoughts. <strong>7 days</strong> for weekly notes. <strong>30 days</strong> for monthly reference. When time's up, they disappear—automatically and permanently.</p>
+                        <div class="date-divider">
+                            <div class="dashed-line"></div>
+                            <span class="current-date">29 Jan</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="phone-mockup">
+                            <img src="/Volumes/Beta/Users/ahayek/Desktop/Simulator Screenshot - iPhone 17 - 2026-01-29 at 09.45.57.png" alt="Vanishing Notes List" class="card-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- In-Place Editing -->
+            <div class="card">
+                <div class="card-content reverse">
+                    <div class="card-text">
+                        <h3>Edit in Place</h3>
+                        <p><strong>No extra screens. No navigation.</strong> Tap a note and start typing. Edit directly in the list view. When you update a note, its timer resets—keeping active notes around as long as you need them.</p>
+                    </div>
+                    <div>
+                        <div class="phone-mockup">
+                            <img src="/Volumes/Beta/Users/ahayek/Desktop/Simulator Screenshot - iPhone 17 - 2026-01-29 at 09.45.59.png" alt="Settings" class="card-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smart Detection -->
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-text">
+                        <h3>Smart Detection</h3>
+                        <p><strong>Phone numbers, emails, and links are automatically detected.</strong> Tap to call, email, or browse—no copy-paste needed. Perfect for temporary contact info and quick references.</p>
+                    </div>
+                    <div>
+                        <div class="phone-mockup">
+                            <img src="/Volumes/Beta/Users/ahayek/Desktop/Simulator Screenshot - iPhone 17 - 2026-01-29 at 09.46.15.png" alt="Smart Detection" class="card-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- iCloud Sync -->
+            <div class="card">
+                <div class="card-content reverse">
+                    <div class="card-text">
+                        <h3>Seamless iCloud Sync</h3>
+                        <p><strong>All your notes sync across your Apple devices.</strong> Start on iPhone, continue on Mac, finish on iPad. Changes appear instantly. Your data stays in your private iCloud—never on third-party servers.</p>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <img src="/Volumes/Beta/Users/ahayek/Desktop/macscreenshotVN.png" alt="macOS App" class="card-image" style="max-width: 100%; height: auto; border-radius: 20px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Siri & Shortcuts -->
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-text">
+                        <h3>Siri & Shortcuts</h3>
+                        <p><strong>Create notes with your voice.</strong> "Hey Siri, create a note in Vanishing Notes" and dictate your content. Fully integrated with Apple Shortcuts for powerful automation workflows.</p>
+                    </div>
+                    <div>
+                        <div class="phone-mockup">
+                            <img src="/Volumes/Beta/Users/ahayek/Desktop/Simulator Screenshot - iPad mini (A17 Pro) - 2026-01-29 at 09.43.44.png" alt="iPad Interface" class="card-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Safety Net -->
+            <div class="card">
+                <div class="card-content reverse">
+                    <div class="card-text">
+                        <h3>Safety Net</h3>
+                        <p><strong>Deleted notes stay in trash for 30 days.</strong> Changed your mind? Restore them before they're gone forever. A safety net for those moments when you delete too quickly.</p>
+                    </div>
+                    <div>
+                        <div class="phone-mockup">
+                            <img src="/Volumes/Beta/Users/ahayek/Desktop/Simulator Screenshot - iPad mini (A17 Pro) - 2026-01-29 at 09.43.49.png" alt="Trash Feature" class="card-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Design Philosophy -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Paper & Ink</h2>
+            <div class="card philosophy-card">
+                <p style="font-size: 18px; opacity: 0.9; text-align: center; max-width: 700px; margin: 0 auto;"><strong>A minimal, typography-focused design.</strong> No buttons with backgrounds, no glass effects. Just text as the interface—inspired by the timeless simplicity of ink on paper.</p>
+
+                <div class="philosophy-grid">
+                    <div class="philosophy-item">
+                        <h4>Typography as UI</h4>
+                        <p>Text itself is the interface</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <h4>Minimal Chrome</h4>
+                        <p>Clean and distraction-free</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <h4>Dark Mode First</h4>
+                        <p>White ink on black paper</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What is Vanishing Notes?</h4>
+                    <p>Vanishing Notes is a minimalist note-taking app where notes automatically disappear after a set time. It's perfect for temporary information you don't want cluttering your other apps.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>How do notes vanish?</h4>
+                    <p>When you create a note, you choose how long it lasts: 24 hours, 7 days, or 30 days. After that time, the note automatically expires and is removed from your active notes.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Does iCloud sync work?</h4>
+                    <p>Yes, all your notes sync automatically across your devices using iCloud. Changes appear instantly on all your Apple devices.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Can I use Siri?</h4>
+                    <p>Yes, you can create notes using Siri. Just say "Create a note in Vanishing Notes" and dictate your content.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Are there Shortcuts available?</h4>
+                    <p>Yes, Vanishing Notes supports Apple Shortcuts. You can create notes, find notes by content, and get recent notes. Open the Shortcuts app to explore available actions.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What happens when I edit a note?</h4>
+                    <p>When you edit a note, its expiration timer resets. This ensures your note stays around as long as you're actively using it.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Can I restore deleted notes?</h4>
+                    <p>Yes, deleted notes move to trash where they stay for 30 days before permanent deletion. You can restore them from the trash at any time during this period.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Where is my data stored?</h4>
+                    <p>Your notes are stored locally on your device and in your private iCloud account. No data is sent to third-party servers. Complete privacy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Vanishing Notes © 2026. Available on iOS, iPadOS, and macOS.</p>
+            <p style="margin-top: 10px;">Notes that disappear, automatically.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
