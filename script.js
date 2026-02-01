@@ -85,3 +85,21 @@ if (dateElements.length > 0) {
         el.textContent = formattedDate;
     });
 }
+
+// FAQ Accordion Animation
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+    const summary = item.querySelector('summary');
+
+    summary.addEventListener('click', (e) => {
+        if (item.open) {
+            e.preventDefault();
+            item.classList.add('closing');
+
+            setTimeout(() => {
+                item.open = false;
+                item.classList.remove('closing');
+            }, 300);
+        }
+    });
+});
