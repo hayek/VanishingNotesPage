@@ -279,8 +279,19 @@ h1, h2, h3 {
     object-fit: contain;
 }
 
+@media (max-width: 767px) {
+    .hero-image {
+        max-width: 85%;
+        max-height: 500px;
+    }
+}
+
 /* Light/Dark hero image switching */
 .hero-image-dark {
+    display: none;
+}
+
+.hero-mobile {
     display: none;
 }
 
@@ -288,7 +299,7 @@ h1, h2, h3 {
     display: none;
 }
 
-.dark-theme .hero-image-dark {
+.dark-theme .hero-image-dark.hero-desktop {
     display: block;
 }
 
@@ -297,7 +308,39 @@ h1, h2, h3 {
     :root:not(.light-theme):not(.dark-theme) .hero-image-light {
         display: none;
     }
-    :root:not(.light-theme):not(.dark-theme) .hero-image-dark {
+    :root:not(.light-theme):not(.dark-theme) .hero-image-dark.hero-desktop {
+        display: block;
+    }
+}
+
+/* Mobile: Use mobile hero images when layout stacks */
+@media (max-width: 767px) {
+    .hero-desktop {
+        display: none !important;
+    }
+
+    .hero-mobile.hero-image-light {
+        display: block;
+    }
+
+    .hero-mobile.hero-image-dark {
+        display: none;
+    }
+
+    .dark-theme .hero-mobile.hero-image-light {
+        display: none;
+    }
+
+    .dark-theme .hero-mobile.hero-image-dark {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) and (prefers-color-scheme: dark) {
+    :root:not(.light-theme):not(.dark-theme) .hero-mobile.hero-image-light {
+        display: none;
+    }
+    :root:not(.light-theme):not(.dark-theme) .hero-mobile.hero-image-dark {
         display: block;
     }
 }
