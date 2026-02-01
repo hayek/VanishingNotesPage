@@ -18,8 +18,8 @@
     --primary-color: #ffffff;
     --secondary-color: #8e8e93;
     --card-bg: rgba(255, 255, 255, 0.05);
-    --card-bg-center: rgba(255, 255, 255, 0.1);
-    --card-bg-edge: rgba(255, 255, 255, 0.01);
+    --card-bg-center: rgba(255, 255, 255, 0.05);
+    --card-bg-edge: rgba(255, 255, 255, 0.05);
     --border-color: rgba(255, 255, 255, 0.1);
     --hover-bg: rgba(255, 255, 255, 0.08);
 }
@@ -32,8 +32,8 @@
         --primary-color: #ffffff;
         --secondary-color: #8e8e93;
         --card-bg: rgba(255, 255, 255, 0.05);
-        --card-bg-center: rgba(255, 255, 255, 0.08);
-        --card-bg-edge: rgba(255, 255, 255, 0.02);
+        --card-bg-center: rgba(255, 255, 255, 0.05);
+        --card-bg-edge: rgba(255, 255, 255, 0.05);
         --border-color: rgba(255, 255, 255, 0.1);
         --hover-bg: rgba(255, 255, 255, 0.08);
     }
