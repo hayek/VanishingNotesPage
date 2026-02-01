@@ -847,11 +847,6 @@ h1, h2, h3 {
     .marquee-content {
         gap: 40px;
         padding-right: 40px;
-        animation-duration: 35s;
-    }
-
-    .marquee-reverse .marquee-content {
-        animation-duration: 40s;
     }
 }
 

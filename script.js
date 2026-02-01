@@ -86,6 +86,23 @@ if (dateElements.length > 0) {
     });
 }
 
+// Marquee Speed - Adjust based on content width relative to viewport
+function updateMarqueeSpeed() {
+    const marqueeContents = document.querySelectorAll('.marquee-content');
+    const viewportWidth = window.innerWidth;
+    const pixelsPerSecond = 20; // Consistent speed across all screen sizes
+
+    marqueeContents.forEach(content => {
+        const contentWidth = content.scrollWidth;
+        const duration = contentWidth / pixelsPerSecond;
+        content.style.animationDuration = `${duration}s`;
+    });
+}
+
+// Run on load and resize
+updateMarqueeSpeed();
+window.addEventListener('resize', updateMarqueeSpeed);
+
 // FAQ Accordion Animation
 const faqItems = document.querySelectorAll('.faq-item');
 faqItems.forEach(item => {
